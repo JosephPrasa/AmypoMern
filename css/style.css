@@ -1,0 +1,10 @@
+body{
+    background: #b5f5ec;
+    text-align: center;
+    font-family: "Homemade Apple", cursive;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 20px;
+}
