@@ -1,34 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Website Layout </title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">InternSite</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle  text-white"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >Learn
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<header>
-  <div class="logo">InternSite</div>
-  <nav id="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
-</header>
+    <div class="container-auto">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://placehold.co/1400x601"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://placehold.co/1400x602"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://placehold.co/1400x603"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Placeholder container-fluid ends  -->
 
-<main>
-  <h1>Welcome</h1>
-  <p>This is the home page.</p>
-</main>
+    <div class="container">
+      <div class="alert alert-info text-center mt-2">
+        
+        <p class="mt-2">🚀New intern Batch Started 
+          <span class="badge bg-success">
+            Live</span
+          ></p
+        >
+      </div>
+      <!-- alert ends  -->
+      <div class="row mt-4 text-center">
+        <h2>What Interns Will Learn</h2>
+        <p>
+          core Frontend Concept Using Bootstrap
+        </p>
+      </div>
+    </div>
+    <!--Alert container ends  -->
 
-<footer>
-  <p>© 2025 InternSite</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <div class="container mt-2">
+      <!--  card container starts here -->
+      <div class="row">
+        <!-- card row starts here -->
+        <div class="col-3">
+          <!-- card column starts here -->
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://placehold.co/400x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Responsive Grid</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://placehold.co/400x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Responsive Grid</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://placehold.co/400x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Responsive Grid</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://placehold.co/400x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Responsive Grid</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- card column ends here  -->
+      </div>
+      <!-- card row ends here  -->
+    </div>
+    <!-- card container ends  -->
+     <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <h3>Why Bootstrap?</h3>
+                <p>Bootstrap helps developer cerate professional layouts quickly without writing custom CSS</p>
+                <button class="btn btn-outline-primary text-primary">Read More</button>
+            </div>
+            <div class="col-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>✅Mobile First</td>
+                    </tr>
+                    <tr>
+                        <td>✅Prebuilt Components </td>
+                    </tr>
+                    <tr>
+                        <td>✅Responsive Grid</td>
+                    </tr>
+                    <tr>
+                        <td>✅Easy to Learn</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     </div>
+    <footer class="bg-dark text-white p-3 mt-3">
+      <!-- footer starts here -->
+      <div class="container">
+        <!-- footer container starts here -->
+        <div class="row">
+          <!-- footer row starts here -->
+          <div class="col-3">
+            <h2>InternSite</h2>
+            <p>
+             Frontend learning platforms for interns
+            </p>
+          </div>
+          <div class="col-3">
+            <h2>Quick Links</h2>
+            <ul class="list-unstyled p-2">
+              <!-- list starts here -->
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-white text-decoration-none"></a
+                >About
+              </li>
+            </ul>
+            <!-- list ends here -->
+          </div>
+          <div class="col-4">
+            <h5>Status</h5>
+            <p class="badge bg-success">Learning Mode</p>
+            
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">&COPY; 2025 InternSite | Bootstrap 5.</div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+  </body>
 </html>
