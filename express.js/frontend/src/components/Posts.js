@@ -21,7 +21,7 @@ const Posts = () => {
   };
   const addPost = () => {
     if (!body || !title) {
-      alert("Thambi keela yerangu paa!");
+      alert("Check it twice!!");
       return;
     };
 
